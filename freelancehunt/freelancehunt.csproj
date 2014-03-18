@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6AF43B9A-4C4B-4192-9F4C-45E7E8CA8A2D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>freelancehunt</RootNamespace>
+    <AssemblyName>freelancehunt</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsColors.cs" />
+    <Compile Include="clsFeed.cs" />
+    <Compile Include="clsFrom.cs" />
+    <Compile Include="clsGlobalSkills.cs" />
+    <Compile Include="clsJSON.cs" />
+    <Compile Include="clsMessage.cs" />
+    <Compile Include="clsPing.cs" />
+    <Compile Include="clsProfile.cs" />
+    <Compile Include="clsProject.cs" />
+    <Compile Include="clsSerchedProject.cs" />
+    <Compile Include="clsTimeConvert.cs" />
+    <Compile Include="clsUpdate.cs" />
+    <Compile Include="cntrlFeed.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cntrlFeed.Designer.cs">
+      <DependentUpon>cntrlFeed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cntrlMessageInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cntrlMessageInfo.Designer.cs">
+      <DependentUpon>cntrlMessageInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cntrlNewAction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cntrlNewAction.Designer.cs">
+      <DependentUpon>cntrlNewAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cntrlProject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cntrlProject.Designer.cs">
+      <DependentUpon>cntrlProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cntrlTagtext.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cntrlTagtext.Designer.cs">
+      <DependentUpon>cntrlTagtext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProjectFullInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProjectFullInfo.Designer.cs">
+      <DependentUpon>frmProjectFullInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateInfo.Designer.cs">
+      <DependentUpon>frmUpdateInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="cntrlFeed.resx">
+      <DependentUpon>cntrlFeed.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cntrlMessageInfo.resx">
+      <DependentUpon>cntrlMessageInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cntrlNewAction.resx">
+      <DependentUpon>cntrlNewAction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cntrlProject.resx">
+      <DependentUpon>cntrlProject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cntrlTagtext.resx">
+      <DependentUpon>cntrlTagtext.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProjectFullInfo.resx">
+      <DependentUpon>frmProjectFullInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateInfo.resx">
+      <DependentUpon>frmUpdateInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <None Include="Resources\bullet_arrow_right.png" />
+    <None Include="Resources\bullet_arrow_left.png" />
+    <None Include="Resources\Actions-mail-mark-task-icon.png" />
+    <None Include="Resources\Actions-document-open-icon.png" />
+    <None Include="Resources\Actions-document-save-icon.png" />
+    <None Include="Resources\zoom.png" />
+    <None Include="Resources\auction_hammer_gavel.png" />
+    <None Include="Resources\prj_state_33.png" />
+    <None Include="Resources\prj_state_32.png" />
+    <None Include="Resources\prj_state_31.png" />
+    <None Include="Resources\prj_state_26.png" />
+    <None Include="Resources\prj_state_25.png" />
+    <None Include="Resources\prj_state_24.png" />
+    <None Include="Resources\prj_state_23.png" />
+    <None Include="Resources\prj_state_22.png" />
+    <None Include="Resources\prj_state_21.png" />
+    <None Include="Resources\prj_state_13.png" />
+    <None Include="Resources\prj_state_12.png" />
+    <None Include="Resources\prj_state_11.png" />
+    <None Include="Resources\external.png" />
+    <None Include="Resources\user_email_gray.png" />
+    <None Include="Resources\user_email.png" />
+    <None Include="Resources\user_okpay_gray.png" />
+    <None Include="Resources\user_okpay.png" />
+    <None Include="Resources\user_wmid_gray.png" />
+    <None Include="Resources\user_wmid.png" />
+    <None Include="Resources\user_date_gray.png" />
+    <None Include="Resources\user_date.png" />
+    <None Include="Resources\user_phone_gray.png" />
+    <None Include="Resources\user_phone.png" />
+    <None Include="Resources\thumb.png" />
+    <None Include="Resources\thumb-up.png" />
+    <None Include="Resources\tag_2.png" />
+    <None Include="Resources\tag_1.png" />
+    <None Include="Resources\world_gray.png" />
+    <None Include="Resources\prj_is_job_gray.png" />
+    <None Include="Resources\prj_is_identity_verified_gray.png" />
+    <None Include="Resources\prj_is_featured_gray.png" />
+    <None Include="Resources\prj_is_job.png" />
+    <None Include="Resources\prj_is_identity_verified.png" />
+    <None Include="Resources\prj_is_featured.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\favicon.ico" />
+    <None Include="Resources\information.png" />
+    <None Include="Resources\world.png" />
+    <None Include="Resources\hammer.png" />
+    <None Include="Resources\user 9.png" />
+    <None Include="Resources\bar.png" />
+    <None Include="Resources\info_rhombus.png" />
+    <None Include="Resources\reseller_programm.png" />
+    <None Include="Resources\feed.png" />
+    <None Include="Resources\emails_stack1.png" />
+    <None Include="Resources\emails_stack.png" />
+    <None Include="Resources\attach_gray.png" />
+    <None Include="Resources\attach.png" />
+    <None Include="Resources\Button-Next-icon.png" />
+    <None Include="Resources\new-icon-gray.png" />
+    <None Include="Resources\new-icon.png" />
+    <None Include="Resources\freelancehunt.png" />
+    <None Include="Resources\inbox.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

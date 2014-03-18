@@ -1,0 +1,8 @@
+g:\Мои проекты\freelance\freeLance_API\freelancehunt\freelancehunt\bin\Debug\freelancehunt.exe
+g:\Мои проекты\freelance\freeLance_API\freelancehunt\freelancehunt\bin\Debug\freelancehunt.pdb
+g:\Мои проекты\freelance\freeLance_API\freelancehunt\freelancehunt\obj\Debug\ResolveAssemblyReference.cache
+g:\Мои проекты\freelance\freeLance_API\freelancehunt\freelancehunt\obj\Debug\freelancehunt.Form1.resources
+g:\Мои проекты\freelance\freeLance_API\freelancehunt\freelancehunt\obj\Debug\freelancehunt.Properties.Resources.resources
+g:\Мои проекты\freelance\freeLance_API\freelancehunt\freelancehunt\obj\Debug\freelancehunt.csproj.GenerateResource.Cache
+g:\Мои проекты\freelance\freeLance_API\freelancehunt\freelancehunt\obj\Debug\freelancehunt.exe
+g:\Мои проекты\freelance\freeLance_API\freelancehunt\freelancehunt\obj\Debug\freelancehunt.pdb
